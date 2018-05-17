@@ -1,0 +1,255 @@
+[slide: 1984]
+
+Our story begins, ominously, in the year 1984. We were at war with Eastasia, we had always been at war with Eastasia, and the MIT AI Lab had just gotten a new printer.
+
+It was a good printer. The Xerox corporation had, at some point in the immediate past, realised that if you took the input end out of their photocopiers and instead piped the input in from over the network, it actually made a really groundbreaking new printer technology for the time. It was really fast, it was very precise - circles came out as circles instead of weird ovals, lines came out looking like lines and not sine waves. Everyone was very happy about it.
+
+But there was a snag. The Xerox photocopier was designed with the assumption that its operator was present, feeding the papers to be copied into the machine as the process did its thing. With this assumption in mind, its engineers had considered it reasonable that the operator would also be able to deal with paper jams in an immediate and timely fashion. Now that the device was a network printer, they found that this design decision was no longer quite solid, and jams could go unnoticed for a long time without being rectified.
+
+[slide: Richard and the printer]
+
+And thus begins the story of Richard and the printer.
+
+At the MIT AI Lab, in those days, there was a young hacker named Richard Stallman. Richard had just sent a 50 page job off to the printer and gone back to his programming. When he surfaced again, some time later, he went to the printer to collect his printout.
+
+Now what did he find? The printer, of course, was jammed. Instead of his 50 page printout, he found only four pages in the printer's out tray.
+
+They were somebody else's pages.
+
+His job hadn't even started, because the printer was already jammed.
+
+Richard was not pleased, and, being a hacker, he was going to figure out a solution to this problem. Now, he was not a mechanical engineer, so he didn't know how to actually take the printer apart and put it back together in a better way. But this was not the first time they'd had a printer that could jam at the MIT AI Lab. In fact, Richard had already come up with a solution to their problem for their previous printer.
+
+He had patched the printer's driver software so that it would poll the printer to see if it was jammed, and if so, it would email everyone who had a job in the print queue, informing them that the printer was jammed and they should go unjam it. Chances were high that someone with a pressing need for their printout would then immediately go to the printer and fix it.
+
+So he resolved to implement the same fix for their shiny new Xerox.
+
+Except he couldn't find the source for the driver software anywhere.
+
+This wasn't unusual, per se. Vendors didn't usually ship source code with their hardware, and Richard didn't want to impose on them to send him the source after they'd already been so kind as to send them the actual printer. The usual tactic was to just wait until the source surfaced somewhere in your social circle, as it usually would back in those days. He probably knew someone who'd even worked on the printer software.
+
+After a while, he succeeded in tracking down one such - a reasearcher at Carnegie Mellon, whose name history did not record, who had just finished a job at Xerox PARC, and who had in fact worked on the printer driver in question. So, the next time Richard found himself at Carnegie Mellon, he went to visit the researcher.
+
+"Hello," said Richard. "I am Richard of MIT. Tell me, where is the source code for the printer driver you worked on? For I much desire to hack on it."
+
+Or words to that effect.
+
+"I'm sorry, Richard, I'm afraid I can't do that," the researcher said. "For it is proprietary software."
+
+Richard was stunned.
+
+In those days, software was simply not considered a trade secret, at least not in the academic community, and in academic-adjacent communities such as Xerox PARC. Everyone shared their software with each other, just because why wouldn't they? It was the neighbourly thing to do. But Xerox was trying to make this printer into a commercial product, and so there were NDAs at work protecting their software as well as their hardware.
+
+Richard was so stunned he didn't know what to do. He was confused by this turn of events, and he was angry at the rebuttal, so he just got up and walked away. He may or may not have slammed the door. It was awkward either way.
+
+Now, this was not the birth of proprietary software. It had already existed for a while, and Richard had even encountered it before in other forms, but it /was/ the birth of something very different.
+
+In that room at Carnegie Mellon, that day in 1984, Richard got so mad at proprietary software that he decided to Do Something About it.
+
+On that day, the Free Software Foundation was born.
+
+[slide: GNU General Public Licence]
+
+Basically, Ricard turned his anger and sense of betrayal of the good socialist principles of hackerdom into the Free Software movement, the idea that software is a communal good and must stay in the public domain where it can be studied and modified freely. He browbeat some lawyers into helping him draft the GNU General Public Licence, the GPL for short, a sort of hack on copyright to ensure that software published under it would be freely available for everybody to enjoy.
+
+Richard resolved that his new movement would build a whole new software ecosystem, called GNU, so that nobody would ever need to use proprietary software again. GNU, obviously, stands for "GNU's Not Unix."
+
+[slide: the 90s]
+
+By the early 90s, things were starting to come together.
+
+Richard had gone underground for 18 months, as the legend has it, and when he came out he'd built a fully functional C compiler - C was the lingua franca back in those days, if you can believe it, everything was written in it - and a C standard library, all under the GPL. He was still working on his grand vision of the OS kernel, the GNU HURD, which is going to be glorious when it's ready, but this Finnish kid called Linus Torvalds had just gone and built a fully functional OS kernel for a laugh, called Linux, which he'd released under the GPL, and suddenly there was something passing for a fully free ecosystem.
+
+This was far from the only player out there - there were already several flavours of the BSD operating system out there, but they were released under licences that, while keeping the software freely available, did not guarantee all the freedoms Richard demanded.
+
+[slide: Cathedral & Bazaar]
+
+More importantly, Richard was no longer the only ideologue out there.
+
+Influenced by him, certainly, but with different goals, the Open Source movement was forming.
+
+A man called Eric Raymond published a text called the Cathedral and the Bazaar, said even by some people who were not called Eric Raymond to have been the great manifesto of the Open Source movement, promoting the idea that the best way to build software was in the open, where everyone was free to inspect the code, spot bugs and suggest fixes. It was a practical philosophy of software engineering more than it was a political movement like Free Software, but it still had the greater good in mind: this way, we all write better software for each other.
+
+[slide: mainstream]
+
+The two flagships of the open source movement were Linux, GPL from the start but not a part of the Free Software Foundation (much to Richard's annoyance), and Netscape, which was Open Source's great victory: a hugely influential proprietary product which had seen the light and opened its source code up, from which grew what we today know as the Mozilla Foundation.
+
+[slide: licences]
+
+The Open Source movement, developing during the 90s and oughties, tended to spurn the GPL, depending rather on what they called "permissive" licences as opposed to the "restrictive" GPL - Richard, not one for backing down from a war of words, called them "pushover licences" or "weak copylefts." The most popular of these were the BSD licence and the MIT X11 licence, today generally referred to as just the MIT licence. These did not include the GPL's share-alike clauses, pragmatically allowing proprietary software to incorporate open source software as long as they advertised the fact and reproduced the relevant copyrights, but without needing to share any changes they made back to the community.
+
+That was the great schism between Open Source and Free Software: Open Source was never about enforcing the sharing of software, as long as they could grow their own software with the help of a wide audience of peers, whereas Free Software was all about the sharing, like it or not, because it was the right thing to do.
+
+[slide: art]
+
+Which brings us to the current decade. And the old political landscape is hardly recognisable.
+
+Well, I say that, but the Free Software Foundation hasn't changed one bit. Richard is still over there in his stubborn corner, fighting the good fight he's been fighting since 1984.
+
+But kids today don't remember Netscape, or Eric Raymond and his manifesto, or the Open Source movement of the 90s.
+
+They're all doing Open Source because, for one thing, it's their art. It's people sharing their creations with each other, it's sharing their tools so they can make cool things together. It's art happening in a vast collaborative space, and it's an amazing thing to see.
+
+[slide: burden]
+
+It's also our burden. It's the thing we do because, well, we've always done it.
+
+It's considered almost a civic duty: obviously, when you write code for work it's proprietary, but you're supposed to dedicate your spare time to Open Source projects, because it's the civic minded thing to do, and because it's how everyone can see you're a good programmer, worthy of being hired into a tech corp so you can write proprietary code for money, so you can feed yourself while you're working on Open Source on your spare time, so you can get a job writing proprietary code and so on and so forth.
+
+Worse, if your Open Source projects become popular, if you get /users/, you're obligated to maintain it. They're going to ask for support, expect you to fix bugs, and you're going to do it, because it's the civic minded thing to do.
+
+All the while, you're burning out on the whole thing, you'd rather be doing anything but satisfying these horrible /users/ demanding more and more of your time. But it's Open Source, right? It's the right thing to do.
+
+At some point, this whole thing turned into something really exploitative as well as something wonderful.
+
+So I need to pull back a bit here, because right now I want to talk about the wonderful bit. We'll get back to how everything is broken in Open Source later, but right now I want to try and share with you why this whole thing is actually worth fixing.
+
+The one thing that's so damned powerful about the idea of Free Software or Open Source or whatever you want to call it:
+
+[slide: agency]
+
+It's because it gives us /agency/.
+
+It gives us the /power/ to change the world around us. Not the power of Greyskull, but that power Richard experienced when he patched that first printer: to take something that is in the world and to make it into something else, something better, through nothing but your own agency. I'm sure everybody in this room has experienced that power, but I'm not sure you've all thought about it in terms of power, or empowerment. You're able to do this incredibly magical thing, to bring something out of the world of ideas - to drag something kicking and screaming out of Plato's cave and into the real world, inasmuch as software exists in the real world. And it does. Ask your non-technical family members if Facebook is real to them. You'd better believe it is.
+
+[slide: power]
+
+And this simple idea of developing our software out in the open gives us this power in a very real sense.
+
+[slide: create]
+
+It gives us the power to /create/ and to /modify/: we have the source code for the software we use available, so that we can customise it, improve it and repair it as we see fit. We can take the foundations that others built for us, and build even greater things on top of them.
+
+[slide: learn]
+
+But there's another even more important aspect to it, that we don't usually thing about: it also gives us the power to /learn/ how software is built. We have the vast bulk of open source software available to us, and we have the ability to examine it to learn how it works, and how to build similar systems on our own.
+
+Anyone can do this, given time. Granted, spare time is a privilege that not everone has, but other than that, there are no gate keepers to this knowledge. It's freely available to anyone who goes looking for it. It's right there, in the commons, with no entrance fees or initiation rituals required.
+
+And this is what's so crucially important about the idea of open source. It ensures the /availability of knowledge/.
+
+[slide: it's the knowledge, not the software]
+
+In the end, this isn't about software. It's about the knowledge of how to build it. It's about the legacy we leave behind: it's not the software we built. Our real legacy as software developers is the /knowledge/ we leave behind.
+
+And to ensure that legacy outlasts us, to safeguard our knowledge for future generations, we /need open source/. If knowledge stays within corporate silos, that knowledge /will be lost/.
+
+And the worst thing I can imagine is knowledge being lost from the world.
+
+[slide: mars]
+
+This is something that keeps me up at night.
+
+This guy here is going to Mars. He might share the secret of how he's doing it. He might not. We think he might, because he's done it before with his electric cars, but he might not.
+
+The next person who comes along might discover how to send people to other stars. They might share their secrets. They might not.
+
+If they don't, if the knowledge isn't in the commons, in the Library of the World as it were, that knowledge can easily be lost, through accident or malice or what have you.
+
+That's a lot of knowledge that will no longer be benefiting the commons.
+
+Worse, they could take their knowledge and actively /harm/ the commons, by imposing their will as gate keepers to the stars for selfish gain.
+
+It could be something more down to earth. It could be a cure for cancer. It could be a cure for /aging/.
+
+[slide: knowledge, again]
+
+So, to reiterate, it's not about the software.
+
+It's about the knowledge of how to make it. We're all building that knowledge, together, and we can't allow it to be lost, or to fall into the hands of poor caretakers. Because we're building the future of our art or science or craft or however you want to describe it - we're building this thing for future generations so that they can go even further than we did.
+
+That's why open source is so damned important.
+
+[slide: how we protect it]
+
+And that's why we need to think about how to safeguard it.
+
+OK, it's time to take a huge step back out of all these grand ideas, and get practical.
+
+[slide: glorious people's licence]
+
+I'm sorry, I'm going to have to talk about licences now, because it's an obvious first step.
+
+I've already mentioned the GPL, which was designed with exactly all this in mind: it uses existing copyright law as a blunt instrument, to ensure that everything that makes use of GPL licenced software must exist in the same space of sharing with the commons. If, by now, you fervently believe in this, you'll want to slap the Glorious People's Licence on everything you can.
+
+But I don't actually even do this myself, and I won't judge you if you won't. Pragmatism is good too.
+
+[slide: copyleft cheat sheet]
+
+You may want to use the GPL. If it's just a bit too extreme for you, it has a lesser form called the LGPL - literally, the "Lesser" General Public Licence - which imposes fewer restrictions on the end user.
+
+You might want to use the Mozilla licence - currently my choice when I want to be pragmatic - which basically works like the GPL, but /only/ on your own code, not on any code using it. This means it can still be used by proprietary code, but if they improve your code in any way they're going to have to share the improvements back to you.
+
+Finally, if you're not actually writing code, there's the Creative Commons Share-Alike licence, which means people are free to use and change your thing however they like, but they must share their work back on the same terms. Don't use the GPL or anything that's meant for code on things that aren't code, that's a really bad idea. Likewise, don't use Creative Commons licences on code.
+
+[slide: pushover cheat sheet]
+
+You might even think all this is stupid, you just want to share your code and you don't really care how people use it. You just want your stuff to be freely available. That's OK too. I'll try not to judge you.
+
+But I'd like to ask one thing of you: please don't use the BSD licence or the MIT licence. Use the Apache Licence instead.
+
+MIT and BSD are /probably/ perfectly good licences, but this is based on the assumption that a lot of the stuff that's /implied/ by the language of these licences actually holds in a court of law. The Apache Licence, on the other hand, works in almost exactly the same way but tends to have /explicit/ language for all this stuff, and is thus much more likely to hold up in court.
+
+An example of this is that MIT contains an implied patent grant, which matters because users of your software wouldn't want you to be able to sue them for patent infringement if they use it. MIT basically says "you're free to use this software without restrictions," which implies that you won't have to buy separate licences for patents held by the author. Apache has specific language for these patent grants.
+
+So please consider the Apache Licence for your next project, or, even better, consider the Mozilla Licence or the GPL.
+
+[slide: fix the community]
+
+OK, it's time to talk about how open source is broken.
+
+I mentioned earlier how it's become a burden. People abandon open source projects because they become too demanding - specifically, people usually abandon open source projects because /users/ become too demanding. People are reluctant to publish their stuff as open source in the first place because it could so easily become a burden.
+
+So, first, I want to talk about the entitlement of our users. Somewhere along the road to modern open source, we lost track of the idea that such a huge amount of open source software and community work is volunteer work, and often simply hobbyist work. We contribute our time because we believe in what we're doing, or just because we enjoy it.
+
+Somewhere along the road, it turned from fun to exploitation. I think it might have been the pragmatic rhetoric of the original Open Source movement that backfired, but I don't really know.
+
+What I do know is that users of all kinds expect free support, that companies demand you relicence your software so they can use it in their proprietary code, and then come and demand your free labour supporting it. They don't expect to have to pay for it, like the "free" in Free Software means "free" as in you don't have to pay a thing for it, someone is just magically going to find the time to give you infinite amounts of their time for free.
+
+That's not acceptable. That's not how this is supposed to be. In fact, it's driving people away from the idea of open source, because to them it's become nothing but a burden. It's one of the most important ideas in the world, but they're not going to carry the weight of this exploitation on their shoulders just because of it, and nor should they have to.
+
+[slide: github]
+
+So I don't know exactly how we got into this mess, but I have a few suspicions. One, as I mentioned, is that we oversold it as "hey, capitalists, here's a ton of free stuff you can use" back in the early days. And then there's GitHub.
+
+If ever there was a corporation built on the backs of the open source proletariat, it's GitHub.
+
+I assing no malice to them - I think, on the whole, they've been a tremendously good thing for the open source movement. They've popularised it in a way that's never been seen before.
+
+But that's also part of the problem. Everything's on GitHub now. It's a proprietary platform and all that, but in my mind that's completely beside the point. Everything's on GitHub, and that means communication between you and your users is easier now than it used to be by an order of magnitude.
+
+Some of those users are going to be exploitative as all hell, and we're not prepared for them. GitHub isn't set up to deal with them - its mission is exactly to enable better communication between you and its users. And so here they are, in your face, with their demands.
+
+For us old timers, this isn't such a problem. We grew up in the crucible of the 90s when the internets were a refuge for people without social skills, we learned early on to tell people like that where to stick it, back when their numbers were still manageable. We're even able to drop a project when it becomes tedious, without feeling like we're letting everybody down.
+
+People who got on the train to open source town after that came on board with entirely different kinds of baggage. They seem to throw themselves into the Great Work of Open Source with much more determination, they burn bright and they don't burn for very long before they're completely burned out.
+
+I feel like GitHub, hopefully quite inadvertently, is enabling this state of affairs, and I think that, in addition to just promoting a serious attitude change, we should also look into how we can fix the situation by changing how GitHub works. I really hope people at GitHub are actually at work on this right now, and I think some of them almost certainly are.
+
+But most of that attitude change, I think, is getting away from this pervasive idea that this is a great way to get free labour out of unsuspecting idealists.
+
+So I think what we really need, most of all, is a credible business model for actually getting paid for open source work, and for this to become the expected norm. When a company comes to you and asks for your time, there needs to be a completely straightforward, and completely normalised, way for them to pay you for your time. Something like micropayments, but real money for real work, with standardised contracts and licensing and everything legal just sorted.
+
+Can you think of a company that's well placed to deliver a service like that?
+
+[slide: never meet your heroes]
+
+But this is also still a political movement. I still believe, as strongly as ever, in Free Software as an ideal, and I hope that in this talk I've explained to you why.
+
+But I'm not a member of the Free Software Foundation, and I doubt I ever will be. It's not a community I'd feel welcome in.
+
+Basically, I think it's lost the plot. I have all the respect in the world for Richard Stallman for starting it, and for sticking to his guns for all these years, but, frankly, the world has changed around him and in the past several years he's been much better at driving people away from Free Software with behaviour that should have been left behind in the 80s than he's been at lighting the fire in the hearts of new developers.
+
+Frankly, he needs to go. I worry that the whole Free Software movement needs to go along with him. It needs to clean house, and fast, or it's done.
+
+Maybe it should be done. The Open Source movement of the 90s is no longer with us in any meaningful sense, but the idea of Open Source still exists, lost at sea. Maybe we need a new movement, with new leaders, leaders that belong to this century.
+
+I don't know.
+
+[slide: knowledge is everything]
+
+All I know is that in the end, it's not about leaders or companies or anything as banal as that. It's about the knowledge, that thing we're building together in the commons for future generations. That's what we have to preserve, at all costs.
+
+And that's all I have to say today.
+
+[slide: bye]

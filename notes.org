@@ -1,0 +1,63 @@
+#+TITLE: You Have Nothing To Lose But Your Chains
+#+AUTHOR: Bodil Stokke
+
+* Outline
+
+** History
+** Kids today: what it's turned into
+*** Look, I made this
+*** I figured out how to do this/do it better, here's my code
+*** Commonality: we want to help others
+*** Drawback: seen as social responsibility, also burden
+** Agency, ability to learn and then create
+*** The notion at the core of Free Software: availability of knowledge
+**** Freedom 1: freedom to study how software works, and to change it to suit your needs
+** leads to: Moral imperative
+*** Going to Mars
+*** Cure for cancer, aging?
+** But: drawbacks of the OSS movement
+*** Flip side, publishing implies maintainership
+**** This is exploitative and we should move away from it
+**** Explore monetisation options, blame GitHub
+** Licence choice is political choice
+
+
+
+* Points
+
+** Knowledge which never makes it into the commons is lost along with those who guard it
+
+** Innovation locked beyond walls of intellectual property only benefits those who control the property
+
+** Free Software is morally important
+
+** Open source has become free as in labour
+*** Publishing open source software in a crowded space comes with usually unwanted maintenance burdens because people feel entitled to your free labour supporting it.
+**** I blame esr for this at the root, marketing OSS as beneficial to corporations, though they're doing even his idea of it wrong.
+
+** Could we change the culture and monetise free software?
+*** In the absence of a revolution, of course.
+*** GitHub are in a position to do this if anyone is. Why aren't they?
+
+
+* Notes
+
+** Viral
+
+"Viral" licences: the real reason why companies object to copyleft
+licences is that they aren't getting free labour out of it. They're
+not "viral" in any sense that other proprietary software is (you'd
+have just as much cause to get sued if you violated a proprietary
+licence than if you violated the GPL) - the crucial difference between
+copyleft and "permissive" licences is that they're freely able to
+exploit the latter without giving anything back. This is why
+corporates are all over the internets asking you to relicense your
+copylefted software.
+
+** Mars
+
+Musk made Tesla patents freely available. SpaceX doesn't own many patents, allegedly because major competitors are governments who wouldn't be obligated to respect them. Also blames the Chinese for not respecting them. More cynically, they probably prefer trade secrets to patents.
+
+Also, ITAR regulations prevent release of knowledge because the Kims of the world could use it to build ICMBs. Interesting moral dilemma: some knowledge may be too dangerous to share freely. Govts may not be the most responsible guardians of that knowledge, but there's always going to be somebody out there who's even worse.
+
+State secrets include: how to build nukes. Probably best to keep that out of the hands of randos.
