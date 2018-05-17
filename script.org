@@ -214,7 +214,7 @@ So I don't know exactly how we got into this mess, but I have a few suspicions. 
 
 If ever there was a corporation built on the backs of the open source proletariat, it's GitHub.
 
-I assing no malice to them - I think, on the whole, they've been a tremendously good thing for the open source movement. They've popularised it in a way that's never been seen before.
+I assign no malice to them - I think, on the whole, they've been a tremendously good thing for the open source movement. They've popularised it in a way that's never been seen before.
 
 But that's also part of the problem. Everything's on GitHub now. It's a proprietary platform and all that, but in my mind that's completely beside the point. Everything's on GitHub, and that means communication between you and your users is easier now than it used to be by an order of magnitude.
 
