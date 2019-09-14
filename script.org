@@ -122,7 +122,7 @@ It gives us the power to /create/ and to /modify/: we have the source code for t
 
 [slide: learn]
 
-But there's another even more important aspect to it, that we don't usually thing about: it also gives us the power to /learn/ how software is built. We have the vast bulk of open source software available to us, and we have the ability to examine it to learn how it works, and how to build similar systems on our own.
+But there's another even more important aspect to it, that we don't usually think about: it also gives us the power to /learn/ how software is built. We have the vast bulk of open source software available to us, and we have the ability to examine it to learn how it works, and how to build similar systems on our own.
 
 Anyone can do this, given time. Granted, spare time is a privilege that not everone has, but other than that, there are no gate keepers to this knowledge. It's freely available to anyone who goes looking for it. It's right there, in the commons, with no entrance fees or initiation rituals required.
 
